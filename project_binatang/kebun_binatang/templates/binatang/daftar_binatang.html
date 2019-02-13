@@ -1,0 +1,29 @@
+{% load static %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+        <link rel="stylesheet" href="{% static 'css/binatang.css'%}">
+        <script src="{% static 'js/jquery-3.3.1.min.js'%)"></script>
+        <script src="{% static 'js/bootstrap.min.js'%)"></script>
+        <title>daftar binatang | kebun binatang</title>
+    </head>
+
+    <body>
+        <div class = 'row' >
+            <div>
+                <h1>Daftar Binatang</h1><br>
+            </div>
+            <div>
+                <h2>ini daftar binatang kebun binatang halaman pertama</h2><br>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="{% url 'base_binatang'%}">Base binatang</a></li>
+                    <li><a href="{% url 'db_binatang'%}">DB Binatang</a></li>
+                    <li><a href="{% url 'input_hewan'%}">Form Hewan</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

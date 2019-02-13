@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>db_binatang</title>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="col-md-12 text-center judul">DB binatang</div>
+        </div>
+    {%for data in binatangs%}
+    <div class="row">
+        <div class="col-md-8 text center">
+            <h3>{{data.nama}}</h3><br>
+                <small> Spesies: {{data.species}}</small><br>
+                <small> Berat: {{data.berat}}</small><br>
+                <small> Umur: {{data.umur}}</small><br>
+        </div>
+    </div>
+    {% endfor%}
+    </body>
+</html>
